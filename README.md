@@ -50,3 +50,6 @@ gcc main.c -Wall -pedantic -std=c99 -o main -lm && ./main > imagen.pbm && gimp i
  ```
 
 Esto va a producir una imagen de tamaño VGA en formato pbm que será abierta en gimp.
+
+### Documentación
+[Ejercicio Obligatorio 1](https://ejercicio-obligatorio-1.netlify.app/index.html)
