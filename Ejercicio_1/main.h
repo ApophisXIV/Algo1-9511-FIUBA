@@ -23,7 +23,7 @@
 #define CX 0.5
 #define CY 0.75
 #define CZ 1.9
-#define R  0.9
+#define R  0.8
 
 #define ANCHO 640
 #define ALTO  480
