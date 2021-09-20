@@ -38,7 +38,17 @@ El mismo consta en un primer acercamiento a las técnicas de Raytraicing mediant
               \  │  Camara  │    /
                \ │          │  /
                 \└──────────┘/
-    
+
+### Compilando el ejercicio
+
+Para poder ejecutar el siguiente comando es necesario tener instalado Gimp y GCC
+
+``` c 
+gcc main.c -Wall -pedantic -std=c99 -o main -lm && ./main > imagen.pbm && gimp imagen.pbm
+ ```
+
+Esto va a producir una imagen de tamaño VGA en formato pbm que será abierta en gimp.
+
 ### Datos personales
 
 - **Alumno:** Guido E. Rodriguez  
