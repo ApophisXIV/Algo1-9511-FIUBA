@@ -122,7 +122,7 @@ int main(void) {
     //(Default) Coordenas Observador: Origen
     //(Default) Resolucion: VGA (640 x 480)
 
-    //En un futuro se podria escalar a imagenes de diferentes tamaños, FOV y posicion de origen 
+    //En un futuro se podria escalar a imagenes de diferentes tamaños, FOV y posicion de origen mediante argumentos en la funcion main
     generarImagen(0, 0, 0, ANCHO, ALTO, FOV);
 
     return 0;
