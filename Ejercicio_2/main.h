@@ -30,9 +30,9 @@
 #define IA 5
 #define II 255
 
-const float luz[3] = {0.2873478855663454, 0.9578262852211513, 0};
+const float LUZ[3] = {0.2873478855663454, 0.9578262852211513, 0};
 
-const float centros[][3] = {
+const float CENTROS[][3] = {
     {-.4, .75, 1.55},
     {-.55, -.4, 2},
     {3, 1.5, 4},
@@ -41,7 +41,7 @@ const float centros[][3] = {
     {3, -1.5, 5},
 };
 
-const float radios[] = {
+const float RADIOS[] = {
     .3,
     .85,
     .4,
@@ -56,7 +56,7 @@ const float ORIGEN_OBSERVADOR[3] = {0, 0 ,0};
 
 #define DEG_TO_RAD(deg) (deg) * (PI / 180)
 
-#define OBJ_QTY sizeof(centros) / sizeof(centros[0])
+#define OBJ_QTY sizeof(CENTROS) / sizeof(CENTROS[0])
 
 // ------ Para uso interno durante desarrollo. Ignorar ------
 /// \cond DO_NOT_DOCUMENT
