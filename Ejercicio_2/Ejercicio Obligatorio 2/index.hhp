@@ -1,0 +1,38 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=Ejercicio Obligatorio 2
+
+[WINDOWS]
+main="Ejercicio Obligatorio 2","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+files.html
+globals.html
+globals_func.html
+graph_legend.html
+index.html
+main_8c.html
+main_8h.html
+main_8h_source.html
+bc_s.png
+bdwn.png
+closed.png
+graph_legend.png
+main_8c__incl.png
+main_8h__dep__incl.png
+main_8h__incl.png
+nav_f.png
+nav_h.png
+open.png
+sync_off.png
+sync_on.png
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
