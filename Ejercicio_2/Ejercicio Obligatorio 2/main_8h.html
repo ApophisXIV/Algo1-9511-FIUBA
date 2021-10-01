@@ -100,7 +100,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DEG_TO_RAD</b>(deg)&#160;&#160;&#160;(deg) * (PI / 180)</td></tr>
 <tr class="separator:a90ae985e00cec9991fb60db399599e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166de3d32532fa7fb03b3fa1ae430a6d"><td class="memItemLeft" align="right" valign="top"><a id="a166de3d32532fa7fb03b3fa1ae430a6d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OBJ_QTY</b>&#160;&#160;&#160;sizeof(centros) / sizeof(centros[0])</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OBJ_QTY</b>&#160;&#160;&#160;sizeof(CENTROS) / sizeof(CENTROS[0])</td></tr>
 <tr class="separator:a166de3d32532fa7fb03b3fa1ae430a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -135,13 +135,13 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a445fdf23dddb069ca86907ad53323ac1"><td class="memItemLeft" align="right" valign="top"><a id="a445fdf23dddb069ca86907ad53323ac1"></a>
-const float&#160;</td><td class="memItemRight" valign="bottom"><b>luz</b> [3] = {0.2873478855663454, 0.9578262852211513, 0}</td></tr>
-<tr class="separator:a445fdf23dddb069ca86907ad53323ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a0cf41f1589565c43b2724997b834b8"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><b>centros</b> [][3]</td></tr>
-<tr class="separator:a9a0cf41f1589565c43b2724997b834b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e5d1bae325c0fce7d5574618a0a153"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><b>radios</b> []</td></tr>
-<tr class="separator:a64e5d1bae325c0fce7d5574618a0a153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188e918be9129085b22184ec9d4b33b0"><td class="memItemLeft" align="right" valign="top"><a id="a188e918be9129085b22184ec9d4b33b0"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>LUZ</b> [3] = {0.2873478855663454, 0.9578262852211513, 0}</td></tr>
+<tr class="separator:a188e918be9129085b22184ec9d4b33b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5838d5ac178a2a650d09eb6b0942204"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><b>CENTROS</b> [][3]</td></tr>
+<tr class="separator:ac5838d5ac178a2a650d09eb6b0942204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1594752a677d093616c5b0d51fb349d7"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><b>RADIOS</b> []</td></tr>
+<tr class="separator:a1594752a677d093616c5b0d51fb349d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c12e372f724b3eacdff4cccffc604b"><td class="memItemLeft" align="right" valign="top"><a id="ae7c12e372f724b3eacdff4cccffc604b"></a>
 const float&#160;</td><td class="memItemRight" valign="bottom"><b>ORIGEN_OBSERVADOR</b> [3] = {0, 0 ,0}</td></tr>
 <tr class="separator:ae7c12e372f724b3eacdff4cccffc604b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -623,14 +623,14 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>ORIGEN_OBSERVA
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a9a0cf41f1589565c43b2724997b834b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a0cf41f1589565c43b2724997b834b8">&#9670;&nbsp;</a></span>centros</h2>
+<a id="ac5838d5ac178a2a650d09eb6b0942204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5838d5ac178a2a650d09eb6b0942204">&#9670;&nbsp;</a></span>CENTROS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const float centros[][3]</td>
+          <td class="memname">const float CENTROS[][3]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -645,14 +645,14 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>ORIGEN_OBSERVA
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a64e5d1bae325c0fce7d5574618a0a153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64e5d1bae325c0fce7d5574618a0a153">&#9670;&nbsp;</a></span>radios</h2>
+<a id="a1594752a677d093616c5b0d51fb349d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1594752a677d093616c5b0d51fb349d7">&#9670;&nbsp;</a></span>RADIOS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const float radios[]</td>
+          <td class="memname">const float RADIOS[]</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -6,16 +6,18 @@
 <UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ac89ba143bd10571d3d5f4597496205e2"><param name="Name" value="ALTO"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#af975c6ac64d5ba32bafe8761a9181e42"><param name="Name" value="ANCHO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ac5838d5ac178a2a650d09eb6b0942204"><param name="Name" value="CENTROS"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a90ae985e00cec9991fb60db399599e8a"><param name="Name" value="DEG_TO_RAD"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#afab1d6380725d86a389fb84b888b091d"><param name="Name" value="FOV"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ae4b0efde4fa4613b407716d265d19b0a"><param name="Name" value="IA"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#aae5a7261e9977d666462304e9063ce0e"><param name="Name" value="II"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#af076440f216f5a40a11563e489f04932"><param name="Name" value="INFINITO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a188e918be9129085b22184ec9d4b33b0"><param name="Name" value="LUZ"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a759e5cfc9024d2975b6f3e2ae69df904"><param name="Name" value="NEGRO"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a166de3d32532fa7fb03b3fa1ae430a6d"><param name="Name" value="OBJ_QTY"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ae7c12e372f724b3eacdff4cccffc604b"><param name="Name" value="ORIGEN_OBSERVADOR"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a598a3330b3c21701223ee0ca14316eca"><param name="Name" value="PI"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a9a0cf41f1589565c43b2724997b834b8"><param name="Name" value="centros"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a1594752a677d093616c5b0d51fb349d7"><param name="Name" value="RADIOS"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8c.html#a9037bce10a9c47b66b0a9158cb540211"><param name="Name" value="computar_intensidad"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8c.html#a9037bce10a9c47b66b0a9158cb540211"><param name="Name" value="main.c"></OBJECT>
@@ -48,7 +50,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#aac977a5721540282ccc500b2a0326967"><param name="Name" value="main.h"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a445fdf23dddb069ca86907ad53323ac1"><param name="Name" value="luz"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8c.html"><param name="Name" value="main.c"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8c.html#a9037bce10a9c47b66b0a9158cb540211"><param name="Name" value="computar_intensidad"></OBJECT>
@@ -99,6 +100,10 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ac5838d5ac178a2a650d09eb6b0942204"><param name="Name" value="CENTROS"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a90ae985e00cec9991fb60db399599e8a"><param name="Name" value="DEG_TO_RAD"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
@@ -119,6 +124,10 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a188e918be9129085b22184ec9d4b33b0"><param name="Name" value="LUZ"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a759e5cfc9024d2975b6f3e2ae69df904"><param name="Name" value="NEGRO"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
@@ -135,7 +144,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a9a0cf41f1589565c43b2724997b834b8"><param name="Name" value="centros"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a1594752a677d093616c5b0d51fb349d7"><param name="Name" value="RADIOS"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
   <UL>
@@ -155,10 +164,6 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a445fdf23dddb069ca86907ad53323ac1"><param name="Name" value="luz"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
-  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#aa1ca88a20adaf756cca29c4c570cc952"><param name="Name" value="norma"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
@@ -172,10 +177,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ab8b62753d41a893d54861824e247dd2b"><param name="Name" value="producto_interno"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a64e5d1bae325c0fce7d5574618a0a153"><param name="Name" value="radios"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
   <UL>
@@ -214,7 +215,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ab8b62753d41a893d54861824e247dd2b"><param name="Name" value="main.h"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a64e5d1bae325c0fce7d5574618a0a153"><param name="Name" value="radios"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8c.html#a04e6097cea77d0ddcc2e187ced6d8c5e"><param name="Name" value="resta"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8c.html#a04e6097cea77d0ddcc2e187ced6d8c5e"><param name="Name" value="main.c"></OBJECT>
