@@ -21,6 +21,7 @@ float norma(const float a[3]) {
 }
 
 void normalizar(float a[3]) {
+
     const float __norma = norma(a);
 
     a[0] /= __norma;
@@ -35,16 +36,17 @@ void resta(float r[3], const float a[3], const float b[3]) {
 }
 
 float distancia_esfera(const float c[3], float r, const float o[3], const float d[3]) {
-    float _c[3] = {0};
 
-    resta(_c, c, o);
+    float co[3] = {0};
 
-    const float cd = producto_interno(_c, d);
-    const float delta = pow(cd, 2) - producto_interno(_c, _c) + r * r;
+    resta(co, c, o);
+
+    const float cd = producto_interno(co, d);
+    const float delta = pow(cd, 2) - producto_interno(co, co) + r * r;
 
     if (delta >= 0) {
-        const float rootDelta = sqrt(delta);
-        const float t = cd - rootDelta > 0 ? cd - rootDelta : cd + rootDelta;
+        const float sqrtDelta = sqrt(delta);
+        const float t = cd - sqrtDelta > 0 ? cd - sqrtDelta : cd + sqrtDelta;
 
         return t;
     }
@@ -53,6 +55,7 @@ float distancia_esfera(const float c[3], float r, const float o[3], const float 
 }
 
 void normal_esfera(float normal[3], const float c[3], float r, const float p[3]) {
+
     resta(normal, p, c);
 
     normal[0] /= r;
@@ -76,7 +79,7 @@ int computar_intensidad(const float cs[][3], const float rs[], size_t n_esferas,
 
     for (size_t i = 0; i < n_esferas; i++) {
 
-        float t = distancia_esfera(cs[i], rs[i], o, d);
+        const float t = distancia_esfera(cs[i], rs[i], o, d);
 
         if (t != INFINITO) {
 
@@ -85,7 +88,7 @@ int computar_intensidad(const float cs[][3], const float rs[], size_t n_esferas,
 
             for (size_t j = 0; j < n_esferas; j++) {
 
-                int I = IA + II * producto_interno(normalImpacto, luz);
+                const int I = IA + II * producto_interno(normalImpacto, luz);
 #ifdef DEBUG
                 DEBUG_TABLE
 #endif
@@ -107,7 +110,7 @@ void generarImagen(const float o[3], unsigned int _ANCHO, unsigned int _ALTO, un
 
     printf("P2\n%d %d\n%d\n", _ANCHO, _ALTO, II);
 
-    float z = _ANCHO / (2 * tan(DEG_TO_RAD(_FOV) / 2));
+    const float z = _ANCHO / (2 * tan(DEG_TO_RAD(_FOV) / 2));
 
     for (int y = _ALTO / 2; y > -(int)_ALTO / 2; y--) {
 
@@ -117,9 +120,9 @@ void generarImagen(const float o[3], unsigned int _ANCHO, unsigned int _ALTO, un
             normalizar(rayo);
 
 #ifdef DEBUG
-            computar_intensidad(centros, radios, OBJ_QTY, luz, o, rayo);
+            computar_intensidad(CENTROS, RADIOS, OBJ_QTY, luz, o, rayo);
 #else
-            printf("%i ", computar_intensidad(centros, radios, OBJ_QTY, luz, o, rayo));
+            printf("%i ", computar_intensidad(CENTROS, RADIOS, OBJ_QTY, LUZ, o, rayo));
 #endif
         }
         printf("\n");
