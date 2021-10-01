@@ -29,11 +29,11 @@
 #define ALTO  480
 #define FOV   90
 
-#define PI 3.1415927
+#define PI 3.1415927f
 
 /* --------------------------------- Macros --------------------------------- */
 
-#define DEG_TO_RAD(deg) deg * (PI / 180)
+#define DEG_TO_RAD(deg) (deg) * (PI / 180)
 
 /* ------------------------------- Prototypes ------------------------------- */
 
