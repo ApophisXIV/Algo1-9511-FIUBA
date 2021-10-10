@@ -42,9 +42,11 @@ float distancia_esfera(const float c[3], float r, const float o[3], const float 
     resta(co, c, o);
 
     const float cd = producto_interno(co, d);
-    const float delta = pow(cd, 2) - producto_interno(co, co) + r * r;
+    const float delta = cd * cd - producto_interno(co, co) + r * r;
 
-    if (delta >= 0) {
+    //Decidi priorizar legibilidad sobre performance al hacer uso de sqrt(delta) 2 veces
+    
+    if ((delta >= 0) && (cd + sqrt(delta) > 0)) { //Corto circuito. Priorizo delta >= 0.
         const float sqrtDelta = sqrt(delta);
         const float t = cd - sqrtDelta > 0 ? cd - sqrtDelta : cd + sqrtDelta;
 
@@ -70,47 +72,42 @@ void interpolar_recta(float p[3], const float o[3], const float d[3], float t) {
 }
 
 int computar_intensidad(const float cs[][3], const float rs[], size_t n_esferas, const float luz[3], const float o[3], const float d[3]) {
-    float normalImpacto[3] = {0};
-    float puntoImpacto[3] = {0};
 
-#ifdef DEBUG
-    LONG_H_LINE
-#endif
+    //Una vez mas decidi priorizar legibilidad sobre performance haciendo uso de un par de variables extra
+    float tUltimoImpacto = INFINITO;
+    size_t n_esferaMinZ = -1;
 
     for (size_t i = 0; i < n_esferas; i++) {
 
         const float t = distancia_esfera(cs[i], rs[i], o, d);
 
-        if (t != INFINITO) {
-
-            interpolar_recta(puntoImpacto, o, d, t);
-            normal_esfera(normalImpacto, cs[i], rs[i], puntoImpacto);
-
-            for (size_t j = 0; j < n_esferas; j++) {
-
-#ifdef DEBUG
-                const int I = IA + II * producto_interno(normalImpacto, luz);
-                DEBUG_TABLE
-#endif
-                if ((i != j) && ((distancia_esfera(cs[j], rs[j], puntoImpacto, luz) != INFINITO))) return IA;
-                
-#ifndef DEBUG
-                const int I = IA + II * producto_interno(normalImpacto, luz);
-#endif
-
-                return I > II ? II : (I < 0 ? IA : I);
-            }
+        if (t != INFINITO && t < tUltimoImpacto) {
+            tUltimoImpacto = t;
+            n_esferaMinZ = i;
         }
     }
 
-#ifdef DEBUG
-    MISSED_RAY
-#endif
+    if (tUltimoImpacto != INFINITO) {
+
+        float normalImpacto[3] = {0};
+        float puntoImpacto[3] = {0};
+
+        interpolar_recta(puntoImpacto, o, d, tUltimoImpacto);
+        normal_esfera(normalImpacto, cs[n_esferaMinZ], rs[n_esferaMinZ], puntoImpacto);
+
+        for (size_t j = 0; j < n_esferas; j++) {
+
+            if ((n_esferaMinZ != j) && ((distancia_esfera(cs[j], rs[j], puntoImpacto, luz) != INFINITO))) return IA;
+        }   
+
+        const int I = IA + II * producto_interno(normalImpacto, luz);
+        return I > II ? II : (I <= IA ? IA : I);
+    }
 
     return NEGRO;
 }
 
-void generarImagen(const float o[3], unsigned int _ANCHO, unsigned int _ALTO, unsigned int _FOV) {
+void generarImagen(const float o[3], unsigned int _ANCHO, unsigned int _ALTO, unsigned int _FOV, const float _LUZ[3]) {
 
     printf("P2\n%d %d\n%d\n", _ANCHO, _ALTO, II);
 
@@ -123,11 +120,7 @@ void generarImagen(const float o[3], unsigned int _ANCHO, unsigned int _ALTO, un
             float rayo[3] = {x, y, z};
             normalizar(rayo);
 
-#ifdef DEBUG
-            computar_intensidad(CENTROS, RADIOS, OBJ_QTY, LUZ, o, rayo);
-#else
-            printf("%i ", computar_intensidad(CENTROS, RADIOS, OBJ_QTY, LUZ, o, rayo));
-#endif
+            printf("%i ", computar_intensidad(CENTROS, RADIOS, OBJ_QTY, _LUZ, o, rayo));
         }
         printf("\n");
     }
@@ -139,7 +132,7 @@ int main(void) {
     //(Default) Resolucion: VGA (640 x 480)
 
     //En un futuro se podria escalar a imagenes de diferentes tamaños, FOV y posicion de origen mediante argumentos en la funcion main
-    generarImagen(ORIGEN_OBSERVADOR, ANCHO, ALTO, FOV);
+    generarImagen(ORIGEN_OBSERVADOR, ANCHO, ALTO, FOV,LUZ);
 
     return 0;
 }

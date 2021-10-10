@@ -32,6 +32,7 @@
 
 const float LUZ[3] = {0.2873478855663454, 0.9578262852211513, 0};
 
+/// @note Las ultimas 4 coordenadas de esferas son de prueba con z menores a los dados
 const float CENTROS[][3] = {
     {-.4, .75, 1.55},
     {-.55, -.4, 2},
@@ -39,8 +40,13 @@ const float CENTROS[][3] = {
     {3, 1.5, 5},
     {3, -1.5, 4},
     {3, -1.5, 5},
+    {0, .4, 1.2},   
+    {.4, .2, 1.45},
+    {.45, .45, 1.3},
+    {3, -.5, 4},
 };
 
+/// @note Los ultimos 4 radios son de esferas de prueba con z menores a los dados
 const float RADIOS[] = {
     .3,
     .85,
@@ -48,6 +54,10 @@ const float RADIOS[] = {
     .4,
     .4,
     .4,
+    .3,
+    .2,
+    .05,
+    .2,
 };
 
 const float ORIGEN_OBSERVADOR[3] = {0, 0 ,0};
@@ -57,37 +67,6 @@ const float ORIGEN_OBSERVADOR[3] = {0, 0 ,0};
 #define DEG_TO_RAD(deg) (deg) * (PI / 180)
 
 #define OBJ_QTY sizeof(CENTROS) / sizeof(CENTROS[0])
-
-// ------ Para uso interno durante desarrollo. Ignorar ------
-/// \cond DO_NOT_DOCUMENT
-
-// #define DEBUG
-
-#define LONG_H_LINE     printf( "-----------------------------------------"\
-                                "-----------------------------------------"\
-                                "-----------------------------------------"\
-                                "----------------------------------\n");
-
-#define DEBUG_TABLE     printf( "Rayo: (%1.2f, %1.2f, %1.2f) | "\
-                                "T: %1.2f | "\
-                                "P: (%1.2f %1.2f %1.2f) | "\
-                                "C: (%1.2f %1.2f %1.2f) C_Sombra: (%1.2f %1.2f %1.2f) | "\
-                                "i: %zu j: %zu | "\
-                                "N: (%1.2f %1.2f %1.2f) | "\
-                                "I: %i \n",\
-                                d[0], d[1], d[2],\
-                                t,\
-                                puntoImpacto[0], puntoImpacto[1], puntoImpacto[2],\
-                                cs[i][0], cs[i][1], cs[i][2],\
-                                cs[j][0], cs[j][1], cs[j][2],\
-                                i,j,\
-                                normalImpacto[0], normalImpacto[1], normalImpacto[2],\
-                                I > II ? II : (I < 0 ? IA : I)\
-                                );
-
-#define MISSED_RAY      printf("Rayo: (%1.2f, %1.2f, %1.2f) NO PEGA\n", d[0], d[1], d[2]);
-/// \endcond
-
 
 /* ------------------------------- Prototypes ------------------------------- */
 
@@ -194,6 +173,6 @@ int computar_intensidad(const float cs[][3], const float rs[], size_t n_esferas,
  * @param  _FOV: Campo de vision del observador
  * @retval None
  */
-void generarImagen(const float o[3], unsigned int _ANCHO, unsigned int _ALTO, unsigned int _FOV);
+void generarImagen(const float o[3], unsigned int _ANCHO, unsigned int _ALTO, unsigned int _FOV, const float _LUZ[3]);
 
 #endif    // MAIN_H
