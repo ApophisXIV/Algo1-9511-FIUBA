@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="Logo-fiuba_big (1).png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Ejercicio Obligatorio 2
-   &#160;<span id="projectnumber">Entrega 1</span>
+   &#160;<span id="projectnumber">Entrega 2</span>
    </div>
   </td>
  </tr>
@@ -129,9 +129,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9037bce10a9c47b66b0a9158cb540211"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a9037bce10a9c47b66b0a9158cb540211">computar_intensidad</a> (const float cs[][3], const float rs[], size_t n_esferas, const float luz[3], const float o[3], const float d[3])</td></tr>
 <tr class="memdesc:a9037bce10a9c47b66b0a9158cb540211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computa la intensidad de luz en una escala de grises [0 - 255] para un determinado rayo d disparado desde un origen O sobre n esferas de centro C y radio R.  <a href="main_8h.html#a9037bce10a9c47b66b0a9158cb540211">More...</a><br /></td></tr>
 <tr class="separator:a9037bce10a9c47b66b0a9158cb540211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e265eb6efb57f2d12f8275967dddf64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a5e265eb6efb57f2d12f8275967dddf64">generarImagen</a> (const float o[3], unsigned int _ANCHO, unsigned int _ALTO, unsigned int _FOV)</td></tr>
-<tr class="memdesc:a5e265eb6efb57f2d12f8275967dddf64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generador de imagen primitiva.  <a href="main_8h.html#a5e265eb6efb57f2d12f8275967dddf64">More...</a><br /></td></tr>
-<tr class="separator:a5e265eb6efb57f2d12f8275967dddf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeffd07fb04a19904a4b906e7cba27f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#adeffd07fb04a19904a4b906e7cba27f8">generarImagen</a> (const float o[3], unsigned int _ANCHO, unsigned int _ALTO, unsigned int _FOV, const float _LUZ[3])</td></tr>
+<tr class="memdesc:adeffd07fb04a19904a4b906e7cba27f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generador de imagen primitiva.  <a href="main_8h.html#adeffd07fb04a19904a4b906e7cba27f8">More...</a><br /></td></tr>
+<tr class="separator:adeffd07fb04a19904a4b906e7cba27f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -140,7 +140,7 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>LUZ</b> [3] = 
 <tr class="separator:a188e918be9129085b22184ec9d4b33b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5838d5ac178a2a650d09eb6b0942204"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><b>CENTROS</b> [][3]</td></tr>
 <tr class="separator:ac5838d5ac178a2a650d09eb6b0942204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1594752a677d093616c5b0d51fb349d7"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><b>RADIOS</b> []</td></tr>
+<tr class="memitem:a1594752a677d093616c5b0d51fb349d7"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a1594752a677d093616c5b0d51fb349d7">RADIOS</a> []</td></tr>
 <tr class="separator:a1594752a677d093616c5b0d51fb349d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c12e372f724b3eacdff4cccffc604b"><td class="memItemLeft" align="right" valign="top"><a id="ae7c12e372f724b3eacdff4cccffc604b"></a>
 const float&#160;</td><td class="memItemRight" valign="bottom"><b>ORIGEN_OBSERVADOR</b> [3] = {0, 0 ,0}</td></tr>
@@ -287,8 +287,8 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>ORIGEN_OBSERVA
 
 </div>
 </div>
-<a id="a5e265eb6efb57f2d12f8275967dddf64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e265eb6efb57f2d12f8275967dddf64">&#9670;&nbsp;</a></span>generarImagen()</h2>
+<a id="adeffd07fb04a19904a4b906e7cba27f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeffd07fb04a19904a4b906e7cba27f8">&#9670;&nbsp;</a></span>generarImagen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,7 +315,13 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>ORIGEN_OBSERVA
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>_FOV</em>&#160;</td>
+          <td class="paramname"><em>_FOV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>_LUZ</em>[3]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -641,6 +647,11 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>ORIGEN_OBSERVA
 <div class="line">    {3, 1.5, 5},</div>
 <div class="line">    {3, -1.5, 4},</div>
 <div class="line">    {3, -1.5, 5},</div>
+<div class="line">    </div>
+<div class="line">    {0, .4, 1.2},   </div>
+<div class="line">    {.4, .2, 1.45},</div>
+<div class="line">    {.45, .45, 1.3},</div>
+<div class="line">    {3, -.5, 4},</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -663,8 +674,13 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>ORIGEN_OBSERVA
 <div class="line">    .4,</div>
 <div class="line">    .4,</div>
 <div class="line">    .4,</div>
+<div class="line">    .3,</div>
+<div class="line">    .2,</div>
+<div class="line">    .05,</div>
+<div class="line">    .2,</div>
 <div class="line">}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Radios de esferas de prueba con z menores a los dados </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->

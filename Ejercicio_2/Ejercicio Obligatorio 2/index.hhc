@@ -17,7 +17,7 @@
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="computar_intensidad"><param name="Local" value="main_8c.html#a9037bce10a9c47b66b0a9158cb540211"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="distancia_esfera"><param name="Local" value="main_8c.html#a788b52644a4dd010336701f0ebc52489"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="generarImagen"><param name="Local" value="main_8c.html#a5e265eb6efb57f2d12f8275967dddf64"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="generarImagen"><param name="Local" value="main_8c.html#adeffd07fb04a19904a4b906e7cba27f8"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="interpolar_recta"><param name="Local" value="main_8c.html#aac977a5721540282ccc500b2a0326967"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="main"><param name="Local" value="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="norma"><param name="Local" value="main_8c.html#aa1ca88a20adaf756cca29c4c570cc952"><param name="ImageNumber" value="11"></OBJECT>
@@ -40,7 +40,7 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="PI"><param name="Local" value="main_8h.html#a598a3330b3c21701223ee0ca14316eca"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="computar_intensidad"><param name="Local" value="main_8h.html#a9037bce10a9c47b66b0a9158cb540211"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="distancia_esfera"><param name="Local" value="main_8h.html#a788b52644a4dd010336701f0ebc52489"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="generarImagen"><param name="Local" value="main_8h.html#a5e265eb6efb57f2d12f8275967dddf64"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="generarImagen"><param name="Local" value="main_8h.html#adeffd07fb04a19904a4b906e7cba27f8"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="interpolar_recta"><param name="Local" value="main_8h.html#aac977a5721540282ccc500b2a0326967"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="norma"><param name="Local" value="main_8h.html#aa1ca88a20adaf756cca29c4c570cc952"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="normal_esfera"><param name="Local" value="main_8h.html#a9294d7638de5ece06b65107d1fd63442"><param name="ImageNumber" value="11"></OBJECT>
@@ -57,6 +57,7 @@
     <UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="globals.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="globals_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="globals_vars.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
   </UL>
 </UL>

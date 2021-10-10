@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="Logo-fiuba_big (1).png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Ejercicio Obligatorio 2
-   &#160;<span id="projectnumber">Entrega 1</span>
+   &#160;<span id="projectnumber">Entrega 2</span>
    </div>
   </td>
  </tr>
@@ -87,9 +87,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9037bce10a9c47b66b0a9158cb540211"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a9037bce10a9c47b66b0a9158cb540211">computar_intensidad</a> (const float cs[][3], const float rs[], size_t n_esferas, const float luz[3], const float o[3], const float d[3])</td></tr>
 <tr class="memdesc:a9037bce10a9c47b66b0a9158cb540211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computa la intensidad de luz en una escala de grises [0 - 255] para un determinado rayo d disparado desde un origen O sobre n esferas de centro C y radio R.  <a href="main_8c.html#a9037bce10a9c47b66b0a9158cb540211">More...</a><br /></td></tr>
 <tr class="separator:a9037bce10a9c47b66b0a9158cb540211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e265eb6efb57f2d12f8275967dddf64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a5e265eb6efb57f2d12f8275967dddf64">generarImagen</a> (const float o[3], unsigned int _ANCHO, unsigned int _ALTO, unsigned int _FOV)</td></tr>
-<tr class="memdesc:a5e265eb6efb57f2d12f8275967dddf64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generador de imagen primitiva.  <a href="main_8c.html#a5e265eb6efb57f2d12f8275967dddf64">More...</a><br /></td></tr>
-<tr class="separator:a5e265eb6efb57f2d12f8275967dddf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeffd07fb04a19904a4b906e7cba27f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#adeffd07fb04a19904a4b906e7cba27f8">generarImagen</a> (const float o[3], unsigned int _ANCHO, unsigned int _ALTO, unsigned int _FOV, const float _LUZ[3])</td></tr>
+<tr class="memdesc:adeffd07fb04a19904a4b906e7cba27f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generador de imagen primitiva.  <a href="main_8c.html#adeffd07fb04a19904a4b906e7cba27f8">More...</a><br /></td></tr>
+<tr class="separator:adeffd07fb04a19904a4b906e7cba27f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top"><a id="a840291bc02cba5474a4cb46a9b9566fe"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (void)</td></tr>
 <tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,8 +235,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (void)</td></
 
 </div>
 </div>
-<a id="a5e265eb6efb57f2d12f8275967dddf64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e265eb6efb57f2d12f8275967dddf64">&#9670;&nbsp;</a></span>generarImagen()</h2>
+<a id="adeffd07fb04a19904a4b906e7cba27f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeffd07fb04a19904a4b906e7cba27f8">&#9670;&nbsp;</a></span>generarImagen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +263,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (void)</td></
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>_FOV</em>&#160;</td>
+          <td class="paramname"><em>_FOV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>_LUZ</em>[3]&#160;</td>
         </tr>
         <tr>
           <td></td>
