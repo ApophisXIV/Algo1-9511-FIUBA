@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ac89ba143bd10571d3d5f4597496205e2"><param name="Name" value="ALTO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#af975c6ac64d5ba32bafe8761a9181e42"><param name="Name" value="ANCHO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a90ae985e00cec9991fb60db399599e8a"><param name="Name" value="DEG_TO_RAD"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#afab1d6380725d86a389fb84b888b091d"><param name="Name" value="FOV"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f1.html"><param name="Name" value="Funciones auxiliares"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#af076440f216f5a40a11563e489f04932"><param name="Name" value="INFINITO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f3.html"><param name="Name" value="Memoria dinamica"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f2.html"><param name="Name" value="Modelo de Phong"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a759e5cfc9024d2975b6f3e2ae69df904"><param name="Name" value="NEGRO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a598a3330b3c21701223ee0ca14316eca"><param name="Name" value="PI"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a540ae817acde2201e034fc7ed0bbe129"><param name="Name" value="SIN_APORTE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structarreglo__t.html"><param name="Name" value="arreglo_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structarreglo__t.html"><param name="Name" value="arreglo_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structarreglo__t.html#a2f7c11df07abd10d68f39f89208d3ca9"><param name="Name" value="n"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structarreglo__t.html"><param name="Name" value="arreglo_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structarreglo__t.html#ab6b8399f18a00bb9fd36715216a2f1ba"><param name="Name" value="v"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structcolor__t.html#a56aad9040d756e81e63ce10ddcf06ed5"><param name="Name" value="b"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#a936ba38658b0d9c422a21e098d294879"><param name="Name" value="centro"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#af81ab3c692624edebd952ea8b6c6be85"><param name="Name" value="color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#af81ab3c692624edebd952ea8b6c6be85"><param name="Name" value="esfera_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html#a0021a079cc975ec45da864d02ec2220b"><param name="Name" value="color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html#a0021a079cc975ec45da864d02ec2220b"><param name="Name" value="luz_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f2.html#gad38e4c27e330b578a4e59d2d341ea4f6"><param name="Name" value="color_absorber"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f1.html#gad1250cd5f6b96e6de0b78693c56e463a"><param name="Name" value="color_imprimir"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f2.html#ga0238bfaad47f467da109571d19b468ad"><param name="Name" value="color_sumar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structcolor__t.html"><param name="Name" value="color_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structcolor__t.html"><param name="Name" value="color_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structcolor__t.html#a56aad9040d756e81e63ce10ddcf06ed5"><param name="Name" value="b"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structcolor__t.html"><param name="Name" value="color_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structcolor__t.html#a0e4d805a2e3d7ac39acb1611bf0427ef"><param name="Name" value="g"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structcolor__t.html"><param name="Name" value="color_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structcolor__t.html#ab82ca7f23b9f7bb5a221a1b600f50aaf"><param name="Name" value="r"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f2.html#gace8ea4832978556c57773db429e38f7a"><param name="Name" value="computar_intensidad"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html#a105d4ef619fb2f22fcf271faf3ed511d"><param name="Name" value="es_puntual"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f3.html#gab9a8bdeeed69fb268ae1ce5e858a70f4"><param name="Name" value="esfera_crear"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f3.html#ga7938f6af1f6cb671d719380828d61ad8"><param name="Name" value="esfera_destruir"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f1.html#gada027ab577da08f5f1df992f276b81c9"><param name="Name" value="esfera_distancia"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html"><param name="Name" value="esfera_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html"><param name="Name" value="esfera_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#a936ba38658b0d9c422a21e098d294879"><param name="Name" value="centro"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html"><param name="Name" value="esfera_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#af81ab3c692624edebd952ea8b6c6be85"><param name="Name" value="color"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html"><param name="Name" value="esfera_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#a31485f5d567544df5cc0598cfc9f1fc1"><param name="Name" value="ka"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html"><param name="Name" value="esfera_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#a7cb3343aad124a1ba7b5508ea57d9122"><param name="Name" value="kd"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html"><param name="Name" value="esfera_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#a4defbf28947ab24a96860df552d51b48"><param name="Name" value="radio"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structcolor__t.html#a0e4d805a2e3d7ac39acb1611bf0427ef"><param name="Name" value="g"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#a31485f5d567544df5cc0598cfc9f1fc1"><param name="Name" value="ka"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#a7cb3343aad124a1ba7b5508ea57d9122"><param name="Name" value="kd"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f3.html#ga1779cf123c0d6cc6467aee1e60d1186d"><param name="Name" value="luz_crear"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f3.html#gaf5b899ae055e2e90e7197dff5cf8f812"><param name="Name" value="luz_destruir"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html"><param name="Name" value="luz_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html"><param name="Name" value="luz_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html#a0021a079cc975ec45da864d02ec2220b"><param name="Name" value="color"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html"><param name="Name" value="luz_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html#a105d4ef619fb2f22fcf271faf3ed511d"><param name="Name" value="es_puntual"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html"><param name="Name" value="luz_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html#a3da832f91eb74914c346df46181665a1"><param name="Name" value="posicion"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ac89ba143bd10571d3d5f4597496205e2"><param name="Name" value="ALTO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#af975c6ac64d5ba32bafe8761a9181e42"><param name="Name" value="ANCHO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a90ae985e00cec9991fb60db399599e8a"><param name="Name" value="DEG_TO_RAD"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#afab1d6380725d86a389fb84b888b091d"><param name="Name" value="FOV"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#af076440f216f5a40a11563e489f04932"><param name="Name" value="INFINITO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a759e5cfc9024d2975b6f3e2ae69df904"><param name="Name" value="NEGRO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a598a3330b3c21701223ee0ca14316eca"><param name="Name" value="PI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#a540ae817acde2201e034fc7ed0bbe129"><param name="Name" value="SIN_APORTE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#gad38e4c27e330b578a4e59d2d341ea4f6"><param name="Name" value="color_absorber"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#gad1250cd5f6b96e6de0b78693c56e463a"><param name="Name" value="color_imprimir"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ga0238bfaad47f467da109571d19b468ad"><param name="Name" value="color_sumar"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#gace8ea4832978556c57773db429e38f7a"><param name="Name" value="computar_intensidad"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#gab9a8bdeeed69fb268ae1ce5e858a70f4"><param name="Name" value="esfera_crear"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ga7938f6af1f6cb671d719380828d61ad8"><param name="Name" value="esfera_destruir"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#gada027ab577da08f5f1df992f276b81c9"><param name="Name" value="esfera_distancia"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ga1779cf123c0d6cc6467aee1e60d1186d"><param name="Name" value="luz_crear"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#gaf5b899ae055e2e90e7197dff5cf8f812"><param name="Name" value="luz_destruir"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ga83a5854334b94f4fa749aabf529c4f6a"><param name="Name" value="vector_interpolar_recta"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ga2a11696ee4d36547868e63ac1822975b"><param name="Name" value="vector_norma"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ga52d56a98f9f6b3f861de01ad57646307"><param name="Name" value="vector_normalizar"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#gaa599130fbdb73cbb1ed8e37a5e3eb23f"><param name="Name" value="vector_producto_interno"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html"><param name="Name" value="main.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8h.html#ga93f2ec186fbe63259d44e2f4339fd649"><param name="Name" value="vector_resta"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structarreglo__t.html#a2f7c11df07abd10d68f39f89208d3ca9"><param name="Name" value="n"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structluz__t.html#a3da832f91eb74914c346df46181665a1"><param name="Name" value="posicion"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structcolor__t.html#ab82ca7f23b9f7bb5a221a1b600f50aaf"><param name="Name" value="r"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structesfera__t.html#a4defbf28947ab24a96860df552d51b48"><param name="Name" value="radio"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structarreglo__t.html#ab6b8399f18a00bb9fd36715216a2f1ba"><param name="Name" value="v"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f1.html#ga83a5854334b94f4fa749aabf529c4f6a"><param name="Name" value="vector_interpolar_recta"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f1.html#ga2a11696ee4d36547868e63ac1822975b"><param name="Name" value="vector_norma"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f1.html#ga52d56a98f9f6b3f861de01ad57646307"><param name="Name" value="vector_normalizar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f1.html#gaa599130fbdb73cbb1ed8e37a5e3eb23f"><param name="Name" value="vector_producto_interno"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___f1.html#ga93f2ec186fbe63259d44e2f4339fd649"><param name="Name" value="vector_resta"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structvector__t.html"><param name="Name" value="vector_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structvector__t.html"><param name="Name" value="vector_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structvector__t.html#a94cbfff1323348ea33d70842dc42b268"><param name="Name" value="x"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structvector__t.html"><param name="Name" value="vector_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structvector__t.html#afcfa5c744755eff60b45a6d887a2ba19"><param name="Name" value="y"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structvector__t.html"><param name="Name" value="vector_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structvector__t.html#a75ee256b0f63181a222d8f5063fcff0a"><param name="Name" value="z"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structvector__t.html#a94cbfff1323348ea33d70842dc42b268"><param name="Name" value="x"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structvector__t.html#afcfa5c744755eff60b45a6d887a2ba19"><param name="Name" value="y"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structvector__t.html#a75ee256b0f63181a222d8f5063fcff0a"><param name="Name" value="z"></OBJECT>
+</UL>
+</BODY>
+</HTML>
