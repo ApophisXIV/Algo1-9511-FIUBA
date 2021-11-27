@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N_Ejercicio 3
+#define N_Ejercicio 1
 
 #if N_Ejercicio == 1
 
