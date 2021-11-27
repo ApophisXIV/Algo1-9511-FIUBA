@@ -1,0 +1,11 @@
+<map id="include/imagen.h" name="include/imagen.h">
+<area shape="rect" id="node1" title=" " alt="" coords="275,5,410,32"/>
+<area shape="rect" id="node2" href="$imagen_8c.html" title=" " alt="" coords="5,80,192,107"/>
+<area shape="rect" id="node3" href="$bmp_8h.html" title=" " alt="" coords="216,80,331,107"/>
+<area shape="rect" id="node6" href="$core_8h.html" title=" " alt="" coords="355,80,469,107"/>
+<area shape="rect" id="node8" href="$ppm_8h.html" title=" " alt="" coords="493,80,608,107"/>
+<area shape="rect" id="node4" href="$bmp_8c.html" title=" " alt="" coords="107,155,279,181"/>
+<area shape="rect" id="node5" href="$main_8c.html" title=" " alt="" coords="303,155,393,181"/>
+<area shape="rect" id="node7" href="$core_8c.html" title=" " alt="" coords="417,155,533,181"/>
+<area shape="rect" id="node9" href="$ppm_8c.html" title=" " alt="" coords="557,155,729,181"/>
+</map>

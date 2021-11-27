@@ -1,0 +1,10 @@
+<map id="include/core.h" name="include/core.h">
+<area shape="rect" id="node1" title=" " alt="" coords="96,5,209,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,76,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="61,155,143,181"/>
+<area shape="rect" id="node4" href="$imagen_8h.html" title=" " alt="" coords="151,80,234,107"/>
+<area shape="rect" id="node7" href="$mandelbrot_8h.html" title=" " alt="" coords="258,80,367,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="167,155,242,181"/>
+<area shape="rect" id="node6" href="$color_8h.html" title=" " alt="" coords="267,155,332,181"/>
+<area shape="rect" id="node8" href="$vector_8h.html" title=" " alt="" coords="357,155,431,181"/>
+</map>
