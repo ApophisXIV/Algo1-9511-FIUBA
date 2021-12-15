@@ -1,12 +1,16 @@
-## Ejercicio Obligatorio 4
+# Ejercicio Obligatorio 4
 
 Este ejercicio corresponde al cuarto ejercicio obligatorio de cátedra Algoritmos y programación 1 - 95.11 - Essaya.
+En este caso se hace hincapié en la modularización de programas, TDA (ADT), CLA y uso de la herramienta Makefile
 
-### Diagrama de arquitectura del programa
+## Diagrama de arquitectura del programa
 
-<img style="margin: 0 auto;" src="Diagrama_de_arquitectura.png" alt="Arquitectura" title="Arquitectura" width="600px" height="60%" />
+<p align="center" width="500">
+    <img align="center" width="500" src="diagrama_de_arquitectura.png" />
+</p>
 
-### Compilación y ejecución
+
+## Compilación y ejecución
 
 Compilando...
 
@@ -16,26 +20,23 @@ make
 
 Ejecutando...
 
-**PPM**
+**Opción PPM**
 
 ```bash
 ./main 640 480 imagen.ppm
 ```
 
-**BMP**
+**Opción BMP**
 
 ```bash
 ./main 640 480 imagen.bmp
 ```
 
-### Resultado
+## Resultado
 
-<img style="margin: 0 auto;" src="imagen.bmp" alt="Arquitectura" title="Arquitectura" width="600px" height="60%" />
+<p align="center" width="500">
+   <img align="center" width="300" src="imagen.png" />
+</p>
 
-### Datos personales
-
-- **Alumno:** Guido E. Rodriguez
-- **Número de padrón:** 108723
-- **Contacto:** guerodrigue@fi.uba.ar
-- **Fecha de entrega:** 2021-11-19
-- **Copyright** Copyright (c) 2021
+## Documentación
+[Ejercicio Obligatorio 4](https://ejercicio-obligatorio-4.netlify.app/index.html)
