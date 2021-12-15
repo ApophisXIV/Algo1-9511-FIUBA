@@ -4,9 +4,9 @@
  * @author Guido Rodriguez (guerodriguez@fi.uba.ar)
  * @version 1.0
  * @date 2021-09-27
- * 
+ *
  * @copyright Copyright (c) 2021
- * 
+ *
  */
 
 #ifndef MAIN_H
@@ -40,10 +40,10 @@ const float CENTROS[][3] = {
     {3, 1.5, 5},
     {3, -1.5, 4},
     {3, -1.5, 5},
-    {0, .4, 1.2},   
-    {.4, .2, 1.45},
-    {.45, .45, 1.3},
-    {3, -.5, 4},
+    // {0, .4, 1.2},
+    // {.4, .2, 1.45},
+    // {.45, .45, 1.3},
+    // {3, -.5, 4},
 };
 
 /// @note Los ultimos 4 radios son de esferas de prueba con z menores a los dados
@@ -106,13 +106,13 @@ void normalizar(float a[3]);
 void resta(float r[3], const float a[3], const float b[3]);
 
 /**
- * @brief  Computa la distancia a la que se encuentra desde un determinado origen el 
+ * @brief  Computa la distancia a la que se encuentra desde un determinado origen el
  *         primer impacto de un rayo sobre una esfera de radio r y centro c
  * @note   C, O y d son del tipo read-only. El rayo d debe ser un versor
  * @param  c[3]: Terna ordenada. Coordenadas del centro de la esfera
  * @param  r: Radio de la esfera
  * @param  o[3]: Terna ordenada. Coordenadas de origen desde las que el rayo es disparado
- * @param  d[3]: Terna ordenada. Versor asociado al rayo a disparar contra la esfera 
+ * @param  d[3]: Terna ordenada. Versor asociado al rayo a disparar contra la esfera
  *               de radio r y centro c
  * @retval t: Distancia calculada
  * @retval INFINITO: El rayo no impacto sobre ninguna esfera
@@ -120,21 +120,21 @@ void resta(float r[3], const float a[3], const float b[3]);
 float distancia_esfera(const float c[3], float r, const float o[3], const float d[3]);
 
 /**
- * @brief  Computa un versor asociado a un vector normal en una esfera dado por un punto 
+ * @brief  Computa un versor asociado a un vector normal en una esfera dado por un punto
  *         p y su centro
  * @note   C y p son del tipo read-only. El resultado es un versor
- * @param  normal[3]: Terna ordenada donde se almacenara el resultado del versor 
+ * @param  normal[3]: Terna ordenada donde se almacenara el resultado del versor
  *                    asociado a la normal
  * @param  c[3]: Terna ordenada. Coordenadas del centro de la esfera
  * @param  r: Radio de la esfera
- * @param  p[3]: Terna ordenada. Coordenadas del punto de la esfera con el que sera 
+ * @param  p[3]: Terna ordenada. Coordenadas del punto de la esfera con el que sera
  *               calculada la normal
  * @retval None
  */
 void normal_esfera(float normal[3], const float c[3], float r, const float p[3]);
 
 /**
- * @brief  Calcula las coordenadas del punto en el que un determinado rayo impacto para una 
+ * @brief  Calcula las coordenadas del punto en el que un determinado rayo impacto para una
  *         distancia t desde un origen o
  * @note   O y d son del tipo read-only. El rayo d debe ser un versor
  * @param  p[3]: Terna ordenada donde se almacenaran las coordenadas del punto calculadas
@@ -146,9 +146,9 @@ void normal_esfera(float normal[3], const float c[3], float r, const float p[3])
 void interpolar_recta(float p[3], const float o[3], const float d[3], float t);
 
 /**
- * @brief  Computa la intensidad de luz en una escala de grises [0 - 255] para un 
+ * @brief  Computa la intensidad de luz en una escala de grises [0 - 255] para un
  *         determinado rayo d disparado desde un origen O sobre n esferas de centro C y radio R
- * @note   
+ * @note
  * @param  cs[][3]: Array de ternas ordenadas con las coordenadas del centro de las esferas
  * @param  rs[]: Array con los radios de las esferas
  * @param  n_esferas: Cantidad de esferas
@@ -165,7 +165,7 @@ int computar_intensidad(const float cs[][3], const float rs[], size_t n_esferas,
 
 /**
  * @brief  Generador de imagen primitiva
- * @note   Esta funcion se encarga del proceso de generacion de una escena de ancho 
+ * @note   Esta funcion se encarga del proceso de generacion de una escena de ancho
  *         y alto definido para una determinada coordenada origen
  * @param  o[3]: Terna ordenada. Cordenadas de origen del observador
  * @param  _ANCHO: Ancho en pixeles de la escena
