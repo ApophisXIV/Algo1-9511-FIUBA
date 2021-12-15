@@ -1,6 +1,6 @@
-## Ejercicio Obligatorio 2
+## Ejercicio Obligatorio 4
 
-Este ejercicio corresponde al segundo ejercicio obligatorio de cátedra Algoritmos y programación 1 - 95.11 - Essaya.
+Este ejercicio corresponde al cuarto ejercicio obligatorio de cátedra Algoritmos y programación 1 - 95.11 - Essaya.
 
 ### Diagrama de arquitectura del programa
 
