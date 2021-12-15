@@ -24,5 +24,5 @@ gcc main.c -Wall -pedantic -std=c99 -o main -lm && ./main > imagen.ppm && conver
 - **Alumno:** Guido E. Rodriguez
 - **Número de padrón:** 108723
 - **Contacto:** guerodrigue@fi.uba.ar
-- **Fecha de entrega:** 2021-09-24
+- **Fecha de entrega:** 2021-10-31
 - **Copyright** Copyright (c) 2021
