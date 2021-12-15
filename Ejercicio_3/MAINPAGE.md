@@ -18,3 +18,11 @@ gcc main.c -Wall -pedantic -std=c99 -o main -lm && ./main > imagen.ppm && conver
 
 ## Documentación
 [Ejercicio Obligatorio 3](https://ejercicio-obligatorio-3.netlify.app/index.html)
+
+## Datos personales
+
+- **Alumno:** Guido E. Rodriguez
+- **Número de padrón:** 108723
+- **Contacto:** guerodrigue@fi.uba.ar
+- **Fecha de entrega:** 2021-09-24
+- **Copyright** Copyright (c) 2021
