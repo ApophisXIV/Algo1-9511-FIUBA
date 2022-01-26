@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include <assert.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 typedef struct nodo {
     int dato;
@@ -12,7 +12,25 @@ typedef struct {
 } lista_t;
 
 bool hay_ciclo(lista_t *lista) {
-    // HACER: implementar la funcion
+
+    if (lista == NULL || lista->prim == NULL)
+        return false;
+
+    nodo_t *tortuga = lista->prim;
+    nodo_t *liebre = lista->prim;
+
+    while ((tortuga != NULL) && (liebre != NULL)) {
+
+        // Avanza tortuga
+        tortuga = tortuga->prox;
+        // Avanza liebre
+        liebre = liebre->prox->prox;
+        
+		if (tortuga == liebre)
+            return true;
+    }
+
+    return false;
 }
 
 int main(void) {
