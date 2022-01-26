@@ -1,6 +1,6 @@
+#include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
 
 typedef struct nodo {
     int dato;
@@ -13,7 +13,42 @@ typedef struct {
 } lista_t;
 
 void lista_eliminar(lista_t *lista, int dato) {
-    // HACER: implementar la funcion
+
+    nodo_t *n_actual = lista->prim;
+
+    while (n_actual != NULL) {
+
+        if (n_actual->dato == dato) {
+
+            if (n_actual->ant == NULL) {         // Si es el primero (no tiene nodo anterior)
+                lista->prim = n_actual->prox;    // Cambio el primero por el siguiente
+                if (lista->prim != NULL)         // Si no es el ultimo (verifico que no sea NULL, o sea que no sea el ultimo)
+                    lista->prim->ant = NULL;     // El nuevo primero no tiene anterior
+
+            }
+
+            else {
+                n_actual->ant->prox = n_actual->prox;       // Cambio el anterior por el siguiente
+                if (n_actual->prox != NULL)                 // Si no es el ultimo (verifico que no sea NULL, o sea que no sea el ultimo)
+                    n_actual->prox->ant = n_actual->ant;    // El nuevo siguiente no tiene anterior
+            }
+
+            free(n_actual);
+            return;
+        }
+
+        n_actual = n_actual->prox;
+    }
+}
+
+void imprimir_lista(lista_t *lista) {
+
+    nodo_t *n_actual = lista->prim;
+
+    while (n_actual != NULL) {
+        printf("%d\n", n_actual->dato);
+        n_actual = n_actual->prox;
+    }
 }
 
 int main(void) {
@@ -31,6 +66,8 @@ int main(void) {
 
     lista_eliminar(&a, 30);
 
+    imprimir_lista(&a);
+
     assert(a.prim->dato == 10);
     assert(a.prim->prox->dato == 20);
     assert(a.prim->prox->prox->dato == 40);
@@ -47,4 +84,4 @@ int main(void) {
     return 0;
 }
 
-
+// 29 min
