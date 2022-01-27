@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <assert.h>
+#include <stdio.h>
 
 typedef struct nodo {
     int dato;
@@ -11,7 +11,18 @@ typedef struct {
 } lista_t;
 
 int lista_buscar(lista_t *lista, int dato) {
-    // HACER: implementar la funcion
+
+    unsigned int pos = 0;
+
+    nodo_t *nodo = lista->prim;
+
+    while (nodo != NULL) {
+        if (nodo->dato == dato)
+            return pos;
+        nodo = nodo->prox;
+        pos++;
+    }
+    return -1;
 }
 
 int main(void) {
@@ -32,4 +43,3 @@ int main(void) {
     printf("%s: OK\n", __FILE__);
     return 0;
 }
-

@@ -1,9 +1,20 @@
-#include <stdio.h>
 #include <assert.h>
+#include <stdio.h>
 #include <string.h>
 
+
+// Complejidad temporal: O(n^2) 
+// Complejidad espacial: O(n)
 void ordenar_burbujeo(int a[], size_t n) {
-    // HACER: implementar la funcion
+    for (size_t i = 0; i < n; i++) {
+        for (size_t j = 1; j <= n - 1; j++) {
+            if (a[j - 1] > a[j]) {
+                int aux = a[j - 1];
+                a[j - 1] = a[j];
+                a[j] = aux;
+            }
+        }
+    }
 }
 
 int main(void) {
