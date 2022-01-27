@@ -1,9 +1,40 @@
-#include <stdio.h>
 #include <assert.h>
 #include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+
+#define INVERTIR_ENDIANNESS(x)   \
+    (((x) >> 24) |               \
+    (((x) >> 8)  & 0x0000FF00) | \
+    (((x) << 8)  & 0x00FF0000) | \
+    ((x) << 24))
 
 bool invertir_endianness(const char *entrada, const char *salida) {
-    // HACER: implementar la funcion
+
+    if (entrada == NULL || salida == NULL)
+        return false;
+
+    FILE *f = fopen(entrada, "rb");
+    if (f == NULL)
+        return false;
+
+    FILE *out = fopen(salida, "wb");
+    if (out == NULL) {
+        fclose(f);
+        return false;
+    }
+
+    uint32_t numero;
+    while (fread(&numero, sizeof(uint32_t), 1, f) == 1) {
+        numero = INVERTIR_ENDIANNESS(numero);
+        if(fwrite(&numero, sizeof(uint32_t), 1, out) != 1) {
+            fclose(f);
+            fclose(out);
+            return false;
+        }
+    }
+
+    return true;
 }
 
 int main(void) {
@@ -21,3 +52,4 @@ int main(void) {
     printf("  od -t x1 invertido.bin\n");
 }
 
+// 22 min

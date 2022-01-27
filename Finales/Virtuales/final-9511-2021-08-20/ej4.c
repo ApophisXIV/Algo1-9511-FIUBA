@@ -1,14 +1,25 @@
-#include <stdio.h>
 #include <assert.h>
-#include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 void contar_caracteres(const char *s, size_t cantidades[256]) {
-    // HACER: implementar la funcion
+    while (*s)
+        cantidades[(unsigned char) *s++]++;
 }
 
 bool nota_rescate_posible(const char *nota, const char *revista) {
-    // HACER: implementar la funcion
+
+    size_t c_letras_disponibles[256] = {0};
+    contar_caracteres(revista,c_letras_disponibles);
+
+    size_t c_letras_necesarias[256] = {0};
+    contar_caracteres(nota,c_letras_necesarias);
+
+    for (int i = 0; i < 256; i++)
+        if(c_letras_necesarias[i] > c_letras_disponibles[i])
+            return false;
+    return true;
 }
 
 int main(void) {
@@ -25,3 +36,4 @@ int main(void) {
     return 0;
 }
 
+//16 min
