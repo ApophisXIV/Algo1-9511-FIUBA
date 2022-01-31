@@ -3,8 +3,43 @@
 #include <stdbool.h>
 #include <string.h>
 
+#define MAX_LINE 1024
+
 bool uniq(const char *entrada, const char *salida) {
-    // HACER: implementar la funcion
+    if(entrada == NULL || salida == NULL)
+        return false;
+    
+    FILE *f_entrada = fopen(entrada, "r");
+    if(f_entrada == NULL)
+        return false;
+
+    FILE *f_salida = fopen(salida, "w");
+    if(f_salida == NULL){
+        fclose(f_entrada);
+        return false;
+    }
+
+    char buffer[MAX_LINE];
+    char buffer2[MAX_LINE];
+
+    while(fgets(buffer, MAX_LINE, f_entrada) != NULL){
+        if(fgets(buffer2, MAX_LINE, f_entrada) == NULL){
+            fclose(f_entrada);
+            fclose(f_salida);
+            return false;
+        }
+
+        if(strcmp(buffer, buffer2) != 0){
+            fprintf(f_salida,"%s", buffer);
+            fprintf(f_salida,"%s", buffer2);
+        }
+
+    }
+
+    fclose(f_entrada);
+    fclose(f_salida);
+    return true;
+
 }
 
 int main(void) {

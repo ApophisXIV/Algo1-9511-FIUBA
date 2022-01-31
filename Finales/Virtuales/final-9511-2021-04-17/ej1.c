@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <assert.h>
+#include <stdio.h>
 
 typedef struct nodo {
     int dato;
@@ -7,10 +7,25 @@ typedef struct nodo {
     struct nodo *der;
 } nodo_t;
 
-int arbol_recorrer(nodo_t *nodo, const char *camino) {
-    // HACER: implementar la funcion
+int _arbol_recorrer(nodo_t *nodo, const char *camino) {
+
+    if (nodo == NULL)    // Si el nodo es nulo, no hay nada que recorrer
+        return 0;
+
+    if (*camino == '0')
+        return _arbol_recorrer(nodo->izq, camino + 1);    // Izquierda
+
+    if (*camino == '1')
+        return _arbol_recorrer(nodo->der, camino + 1);    // Derecha
+
+    return nodo->dato;
 }
 
+int arbol_recorrer(nodo_t *nodo, const char *camino) {
+    if (nodo == NULL || camino == NULL || *camino == '\0')
+        return 0;
+    return _arbol_recorrer(nodo, camino);
+}
 
 int main(void) {
     // el arbol ejemplo del enunciado
@@ -28,6 +43,13 @@ int main(void) {
 
     // OPCIONAL: escribir casos de prueba adicionales
 
+    assert(arbol_recorrer(&raiz, "000011") == 0);
+
     printf("%s: OK\n", __FILE__);
     return 0;
 }
+
+// 13 min
+
+
+
