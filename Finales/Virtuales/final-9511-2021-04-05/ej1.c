@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <assert.h>
+#include <stdio.h>
 
 typedef struct nodo {
     int dato;
@@ -7,8 +7,21 @@ typedef struct nodo {
     struct nodo *der;
 } nodo_t;
 
+// el dato en cada nodo es
+// mayor o igual que el dato de cualquier nodo del sub-árbol izquierdo, y menor o igual que el
+// dato de cualquier nodo del sub-árbol derecho.
+
 nodo_t *abb_buscar(nodo_t *nodo, int dato) {
-    // HACER: implementar la funcion
+
+    if (nodo == NULL)
+        return NULL;
+
+    if (dato == nodo->dato)
+        return nodo;
+
+    if (dato < nodo->dato)
+        return abb_buscar(nodo->izq, dato);
+    return abb_buscar(nodo->der, dato);
 }
 
 int main(void) {
@@ -27,7 +40,12 @@ int main(void) {
     assert(n == &n6);
 
     // OPCIONAL: agregar mas casos de prueba
+    // Nodo no existente
+    n = abb_buscar(&raiz, 15);
+    assert(n == NULL);
 
     printf("%s: OK\n", __FILE__);
     return 0;
 }
+
+//11 min
