@@ -1,6 +1,6 @@
+#include <assert.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include <assert.h>
 
 typedef struct nodo {
     int dato;
@@ -15,6 +15,22 @@ typedef struct {
 // agregar una funcion privada).
 
 bool esta_ordenada(lista_t *lista) {
+
+    if (lista == NULL || lista->prim == NULL)
+        return false;
+
+    nodo_t *nodo_act = lista->prim;
+    nodo_t *nodo_sig = nodo_act->prox;
+
+    if (nodo_sig == NULL)
+        return true;
+
+    if (nodo_act->dato < nodo_sig->dato){
+        lista_t lista_nueva = {.prim = nodo_sig};
+        return esta_ordenada(&lista_nueva);
+    }
+
+    return false;
 }
 
 int main(void) {
@@ -36,3 +52,5 @@ int main(void) {
     printf("%s: OK\n", __FILE__);
     return 0;
 }
+
+//9 min
