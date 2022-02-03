@@ -6,10 +6,10 @@
 #include "aerodb.h"
 
 #define EJERCICIO1_HABILITADO
-//#define EJERCICIO2_HABILITADO
-//#define EJERCICIO3_HABILITADO
-//#define EJERCICIO4_HABILITADO
-//#define EJERCICIO5_HABILITADO
+#define EJERCICIO2_HABILITADO
+#define EJERCICIO3_HABILITADO
+#define EJERCICIO4_HABILITADO
+#define EJERCICIO5_HABILITADO
 
 #define verificar(condicion) do { \
         if (!(condicion)) { \
@@ -20,6 +20,7 @@
 
 bool cargar_aeropuertos(aerodb_t *a);
 
+#include <assert.h>
 #ifdef EJERCICIO1_HABILITADO
 static bool ejercicio1(void) {
     aerodb_t *a = aerodb_crear();
