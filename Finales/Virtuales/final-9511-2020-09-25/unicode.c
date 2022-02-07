@@ -155,7 +155,7 @@ void unicode_codificar_utf8(const uchar_t *src, uint8_t *dst) {
 // ---- Ejercicio 5 (52 min) ----
 
 /*NOTE: Plan de accion
- * # Recomendacion: Hacer macros para medir un caracter UTF-8 en Unicode y viceversa
+ * - Macros para medir un caracter UTF-8 en Unicode y viceversa
  * - Leer el archivo completo (Truco: Mover ida y vuelta el file pointer y usar fteel)
  * - Reservar memoria para un buffer de dimension n_bytes + 1
  * - Leer el archivo completo y guardarlo en el buffer (Todo en un solo paso sin iteraciones)
@@ -185,30 +185,33 @@ uchar_t *unicode_leer_archivo_utf8(const char *nombre_archivo) {
 		return NULL;
 
 	fseek(f, 0, SEEK_END);
-	size_t n_caracteres = ftell(f);
+	size_t n_bytes = ftell(f);
 	fseek(f, 0, SEEK_SET);
 
-	uint8_t *buffer = malloc(sizeof(uint8_t) * (n_caracteres + 1));
+	uint8_t *buffer = malloc(sizeof(uint8_t) * (n_bytes + 1));
 	if (buffer == NULL) {
 		fclose(f);
 		return NULL;
 	}
 
-	if (fread(buffer, sizeof(uint8_t), n_caracteres, f) != n_caracteres) {
+	if (fread(buffer, sizeof(uint8_t), n_bytes, f) != n_bytes) {
 		fclose(f);
 		free(buffer);
 		return NULL;
 	}
 	fclose(f);
-	buffer[n_caracteres] = '\0';
+	buffer[n_bytes] = '\0';
+
+	fprintf(stderr, "n_bytes: %zu\n", n_bytes);
 
 	// Caracteres Unicode validos en el buffer
 	size_t n_caracteres_unicode = 0;
-	for (size_t i = 0, n_bytes; i < n_caracteres; i += n_bytes) {
-		n_bytes = UTF8_UCHAR_SIZE(buffer[i]);
-		if (n_bytes > 0)
-			n_caracteres_unicode++;
+	for (size_t i = 0, n_bytes_utf8; i < n_bytes; i += n_bytes_utf8) {
+		n_bytes_utf8 = UTF8_UCHAR_SIZE(buffer[i]);
+		n_caracteres_unicode++;
 	}
+
+	fprintf(stderr, "n_caracteres_unicode: %zu\n", n_caracteres_unicode);
 
 	uchar_t *unicode_buffer = malloc(sizeof(uchar_t) * (n_caracteres_unicode + 1));
 	if (unicode_buffer == NULL) {
@@ -232,13 +235,12 @@ bool unicode_escribir_archivo_utf8(const uchar_t *s, const char *nombre_archivo)
 	if (f == NULL)
 		return false;
 
-	const size_t len = unicode_longitud(s);
-
 	// Caracteres UTF-8 validos en el buffer
 	size_t n_bytes_utf8 = 0;
-	for (size_t i = 0; i < len; i++)
-		if (UCHAR_UTF8_SIZE(s[i]) > 0)
-			n_bytes_utf8 += UCHAR_UTF8_SIZE(s[i]);
+	while (*s != '\0') {
+		n_bytes_utf8 += UCHAR_UTF8_SIZE(*s);
+		s++;
+	}
 
 	uint8_t *utf8_buffer = malloc(sizeof(uint8_t) * (n_bytes_utf8 + 1));
 	if (utf8_buffer == NULL) {

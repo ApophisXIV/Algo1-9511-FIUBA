@@ -162,7 +162,7 @@ static bool ejercicio5(void) {
     uchar_t *s = unicode_leer_archivo_utf8("utf8.txt");
     verificar(s != NULL);
 
-    // verificar(unicode_longitud(s) == 7167);
+    verificar(unicode_longitud(s) == 7167);
 
     bool ok = unicode_escribir_archivo_utf8(s, "utf8-2.txt");
     verificar(ok);
