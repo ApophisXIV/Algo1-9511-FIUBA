@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <assert.h>
+#include <stdio.h>
 
 typedef struct nodo {
     int dato;
@@ -12,6 +12,17 @@ typedef struct {
 
 // HACER: escribir la implementacion:
 void lista_mapear(lista_t *lista, int (*f)(int dato)) {
+
+    if (lista == NULL || lista->prim == NULL || f == NULL)
+        return;
+
+    nodo_t *nodo_act = lista->prim;
+
+    while(nodo_act != NULL){
+        nodo_act->dato = f(nodo_act->dato);
+        nodo_act = nodo_act->prox;
+    }
+
 }
 
 static int duplicar(int n) {
@@ -36,7 +47,16 @@ int main(void) {
     // - Lista vacía
     // - Lista con un nodo
 
+    lista_t lista_vacia = {.prim = NULL};
+    lista_mapear(&lista_vacia, duplicar);
+
+    nodo_t n0_vacia = {.dato = 3, .prox = NULL};
+    lista_t lista_un_nodo = {.prim = &n0_vacia};
+    lista_mapear(&lista_un_nodo, duplicar);
+    assert(lista_un_nodo.prim->dato == 3 * 2);
+
     printf("%s: OK\n", __FILE__);
     return 0;
 }
 
+//4 min
