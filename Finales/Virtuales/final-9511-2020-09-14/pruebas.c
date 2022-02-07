@@ -5,11 +5,11 @@
 #include <stdint.h>
 #include "img.h"
 
-// #define EJERCICIO1_HABILITADO
-// #define EJERCICIO2_HABILITADO
-// #define EJERCICIO3_HABILITADO
-// #define EJERCICIO4_HABILITADO
-// #define EJERCICIO5_HABILITADO
+#define EJERCICIO1_HABILITADO
+#define EJERCICIO2_HABILITADO
+#define EJERCICIO3_HABILITADO
+#define EJERCICIO4_HABILITADO
+#define EJERCICIO5_HABILITADO
 
 #define verificar(condicion) do { \
         if (!(condicion)) { \
@@ -148,7 +148,7 @@ static bool ejercicio3(void) {
     return true;
 }
 #endif
-
+#include <assert.h>
 #ifdef EJERCICIO4_HABILITADO
 static bool ejercicio4(void) {
     // creamos una imagen a utilizar de sello
@@ -169,6 +169,7 @@ static bool ejercicio4(void) {
     // creamos la imagen para utilizar de fondo
     img_t *img_fondo = img_crear(120, 40);
     verificar(img_fondo != NULL);
+
 
     // pintamos toda la imagen con un color
     img_pintar(img_fondo, rgba(0xff, 0xff, 0xff, 0xff));
