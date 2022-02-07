@@ -171,24 +171,21 @@ bool img_sellar(img_t *img_papel, const img_t *img_sello, const int x, const int
 	return true;
 }
 
-// ---- Ejercicio 5 () ----
+// ---- Ejercicio 5 (23 min) ----
 
-void print_typo8x8_on_image(const char c, img_t *img, const rgba_t c_fondo, const rgba_t c_texto) {
+static void img_sellar_caracter(img_t *img, const size_t x, const size_t y, const char c, const rgba_t c_fondo, const rgba_t c_letra) {
+
 	for (size_t i = 0; i < 8; i++) {
 		for (size_t j = 0; j < 8; j++) {
 			if ((tipografia8x8[(uint8_t)c][i] >> j) & 1) {
 				// Color texto
-                img_set_pixel(img,j,i,c_texto);
-                printf("#");
+                img_set_pixel(img, x + j, y + i, c_letra);
 			} else {
 				// Color fondo
-                img_set_pixel(img,j,i,c_fondo);
-                printf(".");
+                img_set_pixel(img, x + j, y + i, c_fondo);
 			}
 		}
-        printf("\n");
 	}
-    printf("\n");
 }
 
 img_t *img_crear_texto(const char *s, const rgba_t c_fondo, const rgba_t c_texto) {
@@ -201,22 +198,8 @@ img_t *img_crear_texto(const char *s, const rgba_t c_fondo, const rgba_t c_texto
 	if (img == NULL)
 		return NULL;
 
-	for (size_t k = 0; k < n_chars; k++) {
-        print_typo8x8(s[k]);
-		for (size_t i = 0; i < 8; i++) {
-			for (size_t j = 0; j < 8; j++) {
-				if ((tipografia8x8[(uint8_t)s[k]][i] >> j) & 1) {
-					// Color texto
-					img_set_pixel(img, k * j, k * i, c_fondo);
-				} else {
-					// Color fondo
-					img_set_pixel(img, k * j, k * i, c_texto);
-				}
-			}
-		}
-	}
-
-	print_img(img);
+	for (size_t k = 0; k < n_chars; k++)
+        img_sellar_caracter(img, k * 8, 0, s[k], c_fondo, c_texto);
 
 	return img;
 }
