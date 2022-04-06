@@ -3,11 +3,11 @@
 #include <stdlib.h>
 #include "tuit.h"
 
-//#define EJERCICIO1_HABILITADO
-//#define EJERCICIO2_HABILITADO
-//#define EJERCICIO3_HABILITADO
-//#define EJERCICIO4_HABILITADO
-//#define EJERCICIO5_HABILITADO
+#define EJERCICIO1_HABILITADO
+#define EJERCICIO2_HABILITADO
+#define EJERCICIO3_HABILITADO
+#define EJERCICIO4_HABILITADO
+#define EJERCICIO5_HABILITADO
 
 #define verificar(condicion) do { \
         if (!(condicion)) { \
