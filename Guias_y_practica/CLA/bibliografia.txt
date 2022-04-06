@@ -1,0 +1,7 @@
+KernighanRitchieThe C Programming LanguagePrentice-Hall19889780131103702
+KernighanRitchieEl lenguaje de programacioPearson Educa19919789688802052
+Aguilar  ZahonerProgramacion en C: metodolMcGraw-Hill  20059788448198442
+Deitel   Deitel C: How to Program         Pearson      20129780132990448
+Bowman          Algorithms and Data StructOxford Univer20049780195174809
+Bowman   HernandAlgoritmos y estructuras dOxford Univer19999789706134592
+Kruse    Tondo  Data Structures and PrograPearson Educa20079788177584233

@@ -1,0 +1,37 @@
+
+NOMBRE
+       main, sampler - muestrea una senoidal con decaimiento
+       exponencial
+
+SINOPSIS
+       main –alfa a -amp A -frec f -start T1 -end T2 -points N
+
+DESCRIPCIÓN
+       Dada la función:
+                       -at
+               f(t) = e    A cos(2 pi f t)
+       toma N muestras a intervalos de tiempo regulares entre T1
+       y T2. El span del intervalo entre muestras es (T2 - T1)/N
+
+OPCIONES
+       h
+              muestra esta ayuda.
+       alfa a
+              tasa de dacaimiento
+       amp A
+              amplitud de la función en tiempo 0
+       frec f
+              frecuencia del oscilador
+       start T1
+              valor inicial del intervalo
+       end T2
+              valor final del intervalo
+       points N
+              cantidad de puntos a imprimir
+
+AUTORES
+       Bill Gatos, nah, mentira, en un mundo sin fronteras ¿para
+       qué queremos puertas (Gates) y ventanas (Windows)?.
+
+LICENCIA
+       GNU General Public License v3.0
