@@ -1,6 +1,11 @@
-# Algo1-9511-Ejercicios-Obligatorios
-Repositorio personal - Guido E. Rodriguez #108723
+# Algo1-9511-2C-2021
+En este repositorio vas a encontrar:
+- Varios parciales resueltos (2C-2021)
+- Todos los finales resueltos (hasta Feb-2022)
+- Algunos snippets útiles para CLA, archivos, etc
+- Los ejercicios obligatorios (2C-2021)
 Si este repositorio te es útil, te agradeceria si le das una estrellita. Un abrazo. 😉
+Y ya que estás, tirate un follow jeje. Ahora si, un saludito.
 
 ## Herramientas necesarias
 - gcc 
