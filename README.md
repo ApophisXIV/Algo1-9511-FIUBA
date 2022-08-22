@@ -1,5 +1,6 @@
 # Algo1-9511-Ejercicios-Obligatorios
 Repositorio personal - Guido E. Rodriguez #108723
+Si este repositorio te es útil, te agradeceria si le das una estrellita. Un abrazo. 😉
 
 ## Herramientas necesarias
 - gcc 
